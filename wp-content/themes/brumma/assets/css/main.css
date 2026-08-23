@@ -769,3 +769,37 @@ body::before { opacity: .045; }
     height: 84px !important;
   }
 }
+
+.detail-section .detail-art {
+  min-height: 0;
+  height: 500px;
+}
+
+.detail-section .detail-product-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.detail-section .detail-copy {
+  align-self: start;
+  padding-top: 18px;
+}
+
+@media (min-width: 1024px) {
+  .detail-section .detail-art {
+    height: 540px;
+  }
+}
+
+@media (max-width: 767px) {
+  .detail-section .detail-art {
+    height: 420px;
+  }
+
+  .detail-section .detail-copy {
+    padding-top: 0;
+  }
+}
